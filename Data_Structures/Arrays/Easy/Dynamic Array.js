@@ -46,7 +46,7 @@ function dynamicArray(n, queries) {
             seq[seqIndex].push(y);
         }
         if (queries[i][0] == 2) {
-            lastAnswer = y % seq[seqIndex].length;
+            lastAnswer = seq[seqIndex][y % seq[seqIndex].length];
             result.push(lastAnswer);
         }
     }
